@@ -14,7 +14,6 @@ std::unique_ptr<Figure<T>> input_polygon() {
         std::cout << "Error: at least 3 vertices required.\n";
         return nullptr;
     }
-
     std::vector<Point<T>> verts;
     verts.reserve(n);
     std::cout << "Enter " << n << " vertices (x y): ";
@@ -23,10 +22,8 @@ std::unique_ptr<Figure<T>> input_polygon() {
         std::cin >> x >> y;
         verts.emplace_back(x, y);
     }
-
     return std::make_unique<Polygon<T>>(verts);
 }
-
 template<Scalar T>
 void print_figures_info(const Array<std::unique_ptr<Figure<T>>>& figures) {
     for (size_t i = 0; i < figures.size(); ++i) {
@@ -36,7 +33,6 @@ void print_figures_info(const Array<std::unique_ptr<Figure<T>>>& figures) {
         std::cout << "  Area: " << figures[i]->area() << "\n\n";
     }
 }
-
 template<Scalar T>
 double total_area(const Array<std::unique_ptr<Figure<T>>>& figures) {
     double sum = 0.0;
