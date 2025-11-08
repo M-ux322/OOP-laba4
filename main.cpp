@@ -4,10 +4,8 @@
 
 int main() {
     Array<std::unique_ptr<Figure<double>>> figures;
-
     int choice;
     do {
-        std::cout << "\n=== Universal Polygon Editor ===\n";
         std::cout << "1. Add Polygon\n";
         std::cout << "2. Print all\n";
         std::cout << "3. Total area\n";
@@ -36,6 +34,5 @@ int main() {
             default: std::cout << "Invalid!\n"; break;
         }
     } while (choice != 5);
-
     return 0;
 }
