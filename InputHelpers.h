@@ -25,7 +25,7 @@ std::unique_ptr<Figure<T>> input_polygon() {
     return std::make_unique<Polygon<T>>(verts);
 }
 template<Scalar T>
-void print_figures_info(const Array<std::unique_ptr<Figure<T>>>& figures) {
+void print_figures(const Array<std::unique_ptr<Figure<T>>>& figures) {
     for (size_t i = 0; i < figures.size(); ++i) {
         std::cout << "Figure " << i+1 << ":\n";
         std::cout << "  Center: " << figures[i]->geom_center() << "\n";
@@ -41,3 +41,4 @@ double total_area(const Array<std::unique_ptr<Figure<T>>>& figures) {
     }
     return sum;
 }
+
