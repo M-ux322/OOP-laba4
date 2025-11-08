@@ -30,9 +30,9 @@ int main() {
                 else std::cout << "Invalid index!\n";
                 break;
             }
-            case 5: std::cout << "Bye!\n"; break;
-            default: std::cout << "Invalid!\n"; break;
+            default: std::cout << "Uncorrect\n"; break;
         }
     } while (choice != 5);
     return 0;
 }
+
