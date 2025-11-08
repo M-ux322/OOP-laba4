@@ -7,7 +7,6 @@ int main() {
 
     int choice;
     do {
-        std::cout << "\n=== Universal Polygon Editor ===\n";
         std::cout << "1. Add Polygon\n";
         std::cout << "2. Print all\n";
         std::cout << "3. Total area\n";
@@ -36,9 +35,10 @@ int main() {
             }
             case 5: std::cout << "completion program\n";
                 break;
-            default: std::cout << "Invalid!\n";
+            default: std::cout << "Uncorrect command\n";
                 break;
         }
     } while (choice != 5);
     return 0;
 }
+
