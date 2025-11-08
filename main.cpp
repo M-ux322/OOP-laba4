@@ -21,7 +21,7 @@ int main() {
                 if (poly) figures.push_back(std::move(poly));
                 break;
             }
-            case 2: print_figures_info(figures);
+            case 2: print_figures(figures);
                 break;
             case 3: std::cout << "Total area: " << total_area(figures) << std::endl;
                 break;
@@ -41,4 +41,5 @@ int main() {
     } while (choice != 5);
     return 0;
 }
+
 
